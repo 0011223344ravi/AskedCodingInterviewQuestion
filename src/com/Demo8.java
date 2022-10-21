@@ -15,7 +15,7 @@ public class Demo8 {
         al.add(new Product(1,"apple",60000));
         al.add(new Product(2,"nokia",40000));
         al.add(new Product(3,"apple",30000));
-
-        al.stream().filter(t->t.getPrice()>30000).collect(Collectors.toList()).forEach(System.out::println);
+        al.stream().filter(t->t.getPrice() >3000).collect(Collectors.toList()).forEach(System.out::println);
+        //al.stream().filter(t->t.getPrice()>30000).collect(Collectors.toList()).forEach(System.out::println);
     }
 }
